@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  min-height: 60vh;
+  background: url("./images/pexels-frank-cone-2258536.jpg");
+  -webkit-backgground-size: cover;
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  color: white;
+  filter: bl;
+
+
+}
+
+.wrappermax {
+  max-height: 500px;
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  z-index: 2;
+  width: 70%;
+  background-color: rgb(0, 0, 0, 0.1);
+  border: .5px solid rgb(81, 102, 117);
+  border-radius: 8px;
+
+}
+
+h1 {
+  top: 200px;
+  font-size: 2rem;
+}
+
+.container {
+  
+  max-width: 1200px;
+  margin: auto;
+  width: 90%;
+
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.section-todo {
+  
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  text-align: center;
+}
+
+.form-todo {
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.form-todo input {
+  min-height: 100%;
+}
+
+.form-todo input[type="text"] {
+  background: linear-gradient(to bottom, rgb(172, 164, 164), rgb(251, 249, 249));
+  border-radius: 3px;
+  border-style: none;
+  width: 74%;
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: black;
+}
+
+.form-todo input[type="submit"] {
+  width: 25%;
+  background: rgb(79, 157, 191);
+  color: white;
+  font-size: 1.2rem;
+  word-spacing: 5px;
+  font-weight: bold;
+  border-radius: 3px;
+  border-style: none;
+}
+
+.todo-list {
+
+  text-align: left;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+
+.todo-list li {
+  border-radius: 3px;
+  padding: 0.7rem;
+ 
+  background: linear-gradient(to right, rgb(55, 53, 53), rgb(102, 116, 116), rgb(22, 20, 20));
+  color: white;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-btn {
+
+ 
+  color: white;
+  
+  padding: 0.5rem 1.15rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 3px;
+}
+
+
+
+.done {
+  background: rgba(44, 239, 119, 0.825);
+}
+
+
+
+.remove {
+  background: rgb(226, 62, 76);
+}
+
+.icons {
+  position: absolute;
+  max-width: 100%;
+  z-index: 2;
+}
+
+.icon1 {
+  size: 40px;
+  filter: drop-shadow(0 0 15px rgb(120, 38, 44));
+  transform: scale(0.1) translateX(170rem);
+  top: -10rem;
+  right: -50rem;
+
+  left: 5rem;
+
+  animation: Animation1 5s ease-in infinite;
+}
+
+@keyframes Animation1 {
+  0% {
+    filter: drop-shadow(0 0 15px rgb(101, 9, 50));
+  }
+
+  50% {
+    transform: scale(0.2) translateX(-150rem);
+    filter: drop-shadow(0 0 15px rgb(61, 79, 168));
+  }
+
+}
+
+
+
+.icon2 {
+  filter: drop-shadow(0 0 25px rgb(73, 134, 195));
+  transform: scale(0.18) translateX(128rem) translateY(9rem);
+  top: -27.5rem;
+  right: -60rem;
+  left: 5rem;
+  animation: Animation2 5s linear infinite;
+}
+
+@keyframes Animation2 {
+  20% {
+    filter: drop-shadow(0 0 15px rgb(202, 40, 113));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 25px rgb(205, 167, 70));
+    transform: scale(0.20) translateX(128rem) translateY(15rem);
+  }
+
+  70% {
+    filter: drop-shadow(0 0 50px rgb(205, 74, 174));
+  }
+
+  100% {
+    filter: drop-shadow(0 0 25px rgb(73, 134, 195));
+  }
+}
+
+.icon3 {
+
+  z-index: 9;
+  left: -25rem;
+  bottom: 0;
+  top: -18rem;
+  transform: scale(0.13);
+  animation: Animation3 5s linear infinite;
+}
+
+@keyframes Animation3 {
+  49% {
+
+    transform: rotate(0deg) scale(0.13) translate(0);
+  }
+
+  80% {
+    transform: rotate(-720deg) scale(0.13) translate(50rem, -70rem);
+  }
+
+}
+
+
